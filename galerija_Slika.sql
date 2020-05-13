@@ -1,4 +1,3 @@
-# C:\xampp\mysql\bin\mysql -uedunova -pedunova < C:\Users\User\Projects\Edunova\hello\galerija_Slika.sql
 drop database if exists galerija_Slika;
 create database galerija_Slika;
 use galerija_Slika;
