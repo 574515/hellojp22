@@ -79,6 +79,8 @@ create table mladic(
 alter table neprijatelj add foreign key (sestra) references sestra(sifra);
 alter table zarucnica_Mladic add foreign key (zarucnica) references zarucnica(sifra);
 alter table zarucnica_Mladic add foreign key (mladic) references mladic(sifra);
+alter table prijatelj add foreign key (neprijatelj) references neprijatelj(sifra);
+alter table sestra add foreign key (zarucnica) references zarucnica(sifra);
 
 # describe sestra;
 insert into sestra (indiferentno, prviputa, haljina, majica)
